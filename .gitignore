@@ -1,0 +1,27 @@
+# MATLAB .gitignore Template
+
+# Ignore MATLAB-generated files
+*.asv             # Autosave files
+*.bak             # Backup files
+# *.fig             # Figures (optional)
+*.log             # Log files
+*.out             # Output files
+*.mat             # MAT-files (optional, unless sharing data)
+
+# Ignore Simulink and Model files
+*.slxc            # Simulink cache files
+*.slx.autosave    # Simulink autosave files
+# *.mdl             # Simulink models (optional)
+*.mex*            # Compiled MEX files (platform-specific binaries)
+
+# Ignore personal settings
+*.mlsettings      # MATLAB settings files
+*.m~              # Backup copies of MATLAB files
+*.user.mat        # User-specific MAT files
+
+# Ignore hidden system files (Mac & Windows)
+.DS_Store         # macOS system file
+Thumbs.db         # Windows thumbnail cache
+
+# Ignore project dependencies (if applicable)
+codegen/          # Auto-generated code directory
