@@ -6,4 +6,4 @@ The preprint can be accessed by: xxxxxx
 
 In this repository, we provide the source codes for the Simulation Verification (corresponding to Section V.A in the paper), Algorithm Comparison (Section V.B), Experiments on Ackermann UGV (Section VI.A) and Hardware-In-the-Loop (HIL) Experiments on Fixed-Wing UAV (Section V.B).
 
-For the Simulation Verification, run the first simulation example with "RUN_Example.m".
+## For the Simulation Verification, run the first simulation example with "RUN_Example.m".
