@@ -6,7 +6,7 @@
 # *.fig             # Figures (optional)
 *.log             # Log files
 *.out             # Output files
-*.mat             # MAT-files (optional, unless sharing data)
+# *.mat             # MAT-files (optional, unless sharing data)
 
 # Ignore Simulink and Model files
 *.slxc            # Simulink cache files
