@@ -1,0 +1,80 @@
+control_dt: 0.03
+have_to_circle_at_first_wp: true
+
+rho: 30.0 
+flight_height: 25.0 
+
+#controller's parameters
+v_max: 18.0 
+v_min: 16.0 
+c_p: 180 
+c_theta: 3.1415 
+
+kw_max: 0.5 
+armed_snap_time: 5.0
+
+fixedwing_color_r: 0.0
+fixedwing_color_g: 1.0
+fixedwing_color_b: 0.0
+
+# Destination points
+des_px: 60.0 
+des_py: 103.92 
+des_angle: 2.6180 
+defalut_circle_point_x: -100.0
+defalut_circle_point_y: -173.2051
+
+# #1
+# des_px: -60.0000
+# des_py: -103.9230
+# des_angle: 5.7596
+# defalut_circle_point_x: 0.5000
+# defalut_circle_point_y: 0.5796
+# #2
+# des_px: 120.0000
+# des_py: 0.0000
+# des_angle: 1.5708
+# defalut_circle_point_x: -1.0000
+# defalut_circle_point_y: 0.0000
+# #3
+# des_px: -60.0000
+# des_py: 103.9230
+# des_angle: 3.6652
+# defalut_circle_point_x: 0.5000
+# defalut_circle_point_y: -0.8660
+# #4
+# des_px: -60.0000
+# des_py: -103.9230
+# des_angle: 5.7596
+# defalut_circle_point_x: 50.0000
+# defalut_circle_point_y: 86.6025
+# #5
+# des_px: 120.0000
+# des_py: 0.0000
+# des_angle: 1.5708
+# defalut_circle_point_x: -100.0000
+# defalut_circle_point_y: 0.0000
+# #6
+# des_px: -60.0000
+# des_py: 103.9230
+# des_angle: 3.6652
+# defalut_circle_point_x: 50.0000
+# defalut_circle_point_y: -86.6025
+# #7
+# des_px: -60.0000
+# des_py: -103.9230
+# des_angle: 5.7596
+# defalut_circle_point_x: 100.0000
+# defalut_circle_point_y: 173.2051
+# #8
+# des_px: 120.0000
+# des_py: 0.0000
+# des_angle: 1.5708
+# defalut_circle_point_x: -200.0000
+# defalut_circle_point_y: 0.0000
+# #9
+# des_px: -60.0000
+# des_py: 103.9230
+# des_angle: 3.6652
+# defalut_circle_point_x: 100.0000
+# defalut_circle_point_y: -173.2051

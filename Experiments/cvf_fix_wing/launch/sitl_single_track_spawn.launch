@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <arg name="uav_id" default="0"/>
+    <node pkg="cvf_fix_wing" type="track_controller_node" name="track_controller_node" output="screen">
+        <rosparam file="$(find cvf_fix_wing)/config/track.yaml" command="load" />
+        <param name="uav_id" value="$(arg uav_id)"/>
+        <remap from="mavros/local_position/odom" to="world/local_position/odom"/>
+        <remap from="mavros/local_position/pose" to="world/local_position/pose"/>
+        <remap from="mavros/setpoint_position/local" to="world/setpoint_position/local"/>
+    </node>
+</launch>

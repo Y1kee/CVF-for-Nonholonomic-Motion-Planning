@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <arg name="uav_id" default="0"/>
+    <include file="$(find track_controller)/launch/hil_single_track_spawn.launch">
+        <arg name="uav_id" value="0"/>
+    </include>
+    <!-- <node name="rviz" pkg="rviz" type="rviz" output="screen"
+        args="-d $(find track_controller)/config/rviz.rviz"> 
+    </node> -->
+</launch>

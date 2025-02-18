@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="uav0_home_offset_x" default="-200.0"/>
+    <arg name="uav0_home_offset_y" default="0.0"/>
+    <arg name="uav0_home_offset_z" default="0.0"/>
+    <!-- MAVROS fixedwing SITL environment and frame bridge launch script -->
+    <!-- launches Gazebo environment and xx: MAVROS, PX4 SITL, and spawns vehicle, and bridge -->
+    <!-- vehicle model and world -->
+    <!-- <arg name="vehicle" default="plane"/> -->
+    <arg name="vehicle" default="plane_catapult"/>
+    <arg name="world" default="$(find mavlink_sitl_gazebo)/worlds/empty_world.world"/>
+    <!-- gazebo configs -->
+    <arg name="gui" default="true"/>
+    <arg name="debug" default="false"/>
+    <arg name="verbose" default="false"/>
+    <arg name="paused" default="false"/>
+    <!-- Gazebo sim -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="gui" value="$(arg gui)"/>`
+        <arg name="world_name" value="$(arg world)"/>
+        <arg name="debug" value="$(arg debug)"/>
+        <arg name="verbose" value="$(arg verbose)"/>
+        <arg name="paused" value="$(arg paused)"/>
+    </include>
+    <include file="$(find cvf_fix_wing)/launch/simulator_spawn.launch">
+        <!-- Initial postion-->
+        <arg name="home_offset_x" value="$(arg uav0_home_offset_x)"/>
+        <arg name="home_offset_y" value="$(arg uav0_home_offset_y)"/>
+        <arg name="home_offset_z" value="$(arg uav0_home_offset_z)"/>
+        <!-- args -->
+        <arg name="vehicle" value="$(arg vehicle)"/>
+        <!-- MAVROS and vehicle configs -->
+        <arg name="ID" value="0"/>
+        <arg name="fcu_url" default="udp://:24540@localhost:34580"/>
+    </include>
+    <node name="rviz_cvf" pkg="rviz" type="rviz" args="-d $(find cvf_fix_wing)/config/rviz.rviz"> 
+    </node> 
+</launch>

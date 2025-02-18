@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  <arg name="home_offset_x" default="0.0"/>
+  <arg name="home_offset_y" default="0.0"/>
+  <arg name="home_offset_z" default="0.0"/>
+  <arg name="home_offset_yaw" default="0.0"/>
+  <node pkg="cvf_fix_wing" type="bridge_local_world" name="bridge_local_world" output="screen">
+    <param name="home_offset_x_" value="$(arg home_offset_x)"/>
+    <param name="home_offset_y_" value="$(arg home_offset_y)"/>
+    <param name="home_offset_z_" value="$(arg home_offset_z)"/>
+    <param name="home_offset_yaw_" value="$(arg home_offset_yaw)"/>
+  </node>
+</launch>

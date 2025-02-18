@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <arg name="uav_id" default="0"/>
+    <arg name="des_px" default="0"/>
+    <arg name="des_py" default="0"/>
+    <arg name="des_angle" default="0"/>
+    <arg name="defalut_circle_point_x" default="0"/>
+    <arg name="defalut_circle_point_y" default="0"/>
+    <node pkg="track_controller" type="track_controller_node" name="track_controller_node" output="screen">
+        <rosparam file="$(find track_controller)/config/track.yaml" command="load" />
+        <param name="uav_id" value="$(arg uav_id)"/>
+        <param name="des_px" value="$(arg des_px)"/>
+        <param name="des_py" value="$(arg des_py)"/>
+        <param name="des_angle" value="$(arg des_angle)"/>
+        <param name="defalut_circle_point_x" value="$(arg defalut_circle_point_x)"/>
+        <param name="defalut_circle_point_y" value="$(arg defalut_circle_point_y)"/>
+    </node>
+</launch>
