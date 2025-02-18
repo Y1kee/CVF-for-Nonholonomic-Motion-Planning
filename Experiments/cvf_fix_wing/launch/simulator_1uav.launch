@@ -31,7 +31,7 @@
         <arg name="vehicle" value="$(arg vehicle)"/>
         <!-- MAVROS and vehicle configs -->
         <arg name="ID" value="0"/>
-        <arg name="fcu_url" default="udp://:24540@localhost:34580"/>
+        <arg name="fcu_url" default="udp://:14540@localhost:14580"/>
     </include>
     <node name="rviz_cvf" pkg="rviz" type="rviz" args="-d $(find cvf_fix_wing)/config/rviz.rviz"> 
     </node> 

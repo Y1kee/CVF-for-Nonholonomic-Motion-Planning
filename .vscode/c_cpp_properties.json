@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/andy-station/ws_cvf/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/andy-station/ws_cvf/src/CVF-for-Nonholonomic-Motion-Planning/Experiments/cvf_fix_wing/include/**",
+        "/home/andy-station/ws_cvf/src/gazebo_ros_pkgs/gazebo_plugins/include/**",
+        "/home/andy-station/ws_cvf/src/gazebo_ros_pkgs/gazebo_ros/include/**",
+        "/home/andy-station/ws_cvf/src/gazebo_ros_pkgs/gazebo_ros_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
