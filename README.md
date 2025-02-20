@@ -14,8 +14,8 @@ Run the first simulation example in Section V.A with "RUN_Example.m", all the pa
 ## Algorithm Comparison
 
 The comparative study is based on MATLAB Simulink and is conducted on unicycle and UAV, respectively.
-Based on the unicycle, the proposed method (Simulink model Unicycle_CVF.slx) is compared with the [DVF](10.1109/TAC.2024.3406475) (Unicycle_DVF.slx) and [AVF](10.1109/TAC.2016.2576020) (Unicycle_AVF.slx).
-Based on the fixed-wing UAV, the proposed method (UAV_CVF.slx) is compared with the [CLVF](https://doi.org/10.2514/1.G002281) (UAV_CLVF.slx) and [GVF](10.1109/TRO.2020.3043690) (UAV_GVF.slx).
+Based on the unicycle, the proposed method (Simulink model Unicycle_CVF.slx) is compared with the [DVF](https://doi.org/10.1109/TAC.2024.3406475) (Unicycle_DVF.slx) and [AVF](https://doi.org/10.1109/TAC.2016.2576020) (Unicycle_AVF.slx).
+Based on the fixed-wing UAV, the proposed method (UAV_CVF.slx) is compared with the [CLVF](https://doi.org/10.2514/1.G002281) (UAV_CLVF.slx) and [GVF](https://doi.org/10.1109/TRO.2020.3043690) (UAV_GVF.slx).
 
 ## Experiments on Ackermann UGV
 
