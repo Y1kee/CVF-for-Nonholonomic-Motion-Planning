@@ -29,11 +29,11 @@ For reference, we provide the Gazebo simulation, where the motion planning algor
 
 ---
 
-## Quickstart
+### Quickstart
 
 Here are instructions to perform fixed-wing simulation in Gazebo Classic via PX4.
 
-### Dependency
+#### Dependency
 
 * Ubuntu 20.04
 * ROS Noetic
@@ -42,9 +42,9 @@ Here are instructions to perform fixed-wing simulation in Gazebo Classic via PX4
   * [Installation of PX4 and MAVROS](https://docs.px4.io/main/en/ros/mavros_installation.html)
   * [Launch Gazebo Classic with ROS Wrappers](https://docs.px4.io/main/en/simulation/ros_interface.html#launching-gazebo-classic-with-ros-wrappers)
 
-### Gazebo Simulation
+#### Gazebo Simulation
 
-#### Workspace
+##### Workspace
 
 ```bash
 cd ~ 
@@ -54,7 +54,7 @@ git clone https://github.com/ros-simulation/gazebo_ros_pkgs  # Gazebo-ROS Toolbo
 cd .. && catkin_make
 ```
 
-#### Launch Simulation
+##### Launch Simulation
 
 ```bash
 cd <PX4-Autopilot_clone>
