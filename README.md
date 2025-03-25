@@ -17,7 +17,7 @@ Based on the fixed-wing UAV, the proposed method (UAV_CVF.slx) is compared with 
 
 ## Experiments on Ackermann UGV
 
-In the experiments, we utilize the ROS Toolbox provided by MathWorks to connect our Simulink model "Ackermann_UGV_exp.slx" with the ROS noetic, sending control inputs to the [LIMO by AgileX](https://global.agilex.ai/products/limo-pro) (in the Ackermann mode).
+In the experiments, we utilize the ROS Toolbox provided by MathWorks to connect our Simulink model "Ackermann_UGV_exp.slx" with the ROS noetic, sending control inputs to the [LIMO by AgileX](https://github.com/agilexrobotics/limo-doc/blob/master/Limo%20user%20manual(EN).md) (in the Ackermann mode).
 In the experiments, the Simulink model receives ROS topic '/odom' to get the vehicle's configuration and sends ROS topic '/cmd_vel' as the control inputs of the vehicle.
 The model can be easily adjusted and integrated into your experiment environment for replicate the results and extend the research.
 
